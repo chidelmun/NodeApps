@@ -120,3 +120,8 @@ exports.test_add = function(test){
 	test.equals(math.add(50,50),100);
 	test.done();
 };
+
+exports.test_subtract = function(test){
+	test.equals(math.subtract(50,100),-50);
+	test.done();
+};
