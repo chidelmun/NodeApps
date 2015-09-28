@@ -12,9 +12,10 @@ driver.findElement(By.name('pma_password')).sendKeys('root');
 
 driver.findElement(By.id('input_go')).click();
 
+driver.wait(until.titleIs('phpmyadmin - Google Search'), 2000);
+
 driver.findElement(By.class('icon ic_s_db')).click();
 
-//driver.findElement(By.class('icon ic_s_db')).sendKeys('root');
 
 driver.wait(until.titleIs('webdriver - Google Search'), 9000);
 // driver.quit();
