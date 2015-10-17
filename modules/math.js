@@ -28,3 +28,7 @@ exports.min = function(x,y){
 exports.multiply = function(x,y){
 	return x*y;
 };
+
+exports.add2 = function(x,y,z){
+	return (x+y == z) == true;
+};
