@@ -92,6 +92,11 @@ exports.multiply_func = function(test){
 };
 
 exports.test_isdivisible = function(test){
-	test.equals(math.isdivisibleby(20,2),true);
+	test.equals(math.isdivisible(20,2),true);
+	test.done();
+};
+
+exports.test_notdivisible = function(test){
+	test.equals(math.isdivisible(5,2), false);
 	test.done();
 };
