@@ -91,6 +91,11 @@ exports.multiply_func = function(test){
 	test.done();
 };
 
+exports.add2 = function(test){
+	test.equals(math.add2(1,5,9),false);
+	test.done();
+};
+
 exports.test_isdivisible = function(test){
 	test.equals(math.isdivisible(20,2),true);
 	test.done();
