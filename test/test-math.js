@@ -76,3 +76,6 @@ exports.test_multiply = function(test){
 	test.equals(math.multiply(2,3),6);
 	test.done();
 };
+exports.test_add2 = function(test){
+	test.equals(math.add2(2,3,5),true);
+};
