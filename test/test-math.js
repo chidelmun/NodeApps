@@ -57,3 +57,8 @@ exports.test_max = function(test){
 	test.equals(math.max(5,9),false);
 	test.done();
 };
+
+exports.test_max = function(test){
+	test.equals(math.max(22,2),true);
+	test.done();
+};
