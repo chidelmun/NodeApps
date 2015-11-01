@@ -62,3 +62,8 @@ exports.test_max = function(test){
 	test.equals(math.max(22,2),true);
 	test.done();
 };
+
+exports.test_add = function(test){
+	test.equals(math.add(9,1),10);
+	test.done();
+};
