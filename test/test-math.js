@@ -81,3 +81,7 @@ exports.test_add2 = function(test){
 	test.done();
 };
 
+exports.test_multiply2 = function(test){
+	test.equals(math.multiply2(2,5,9), false);
+	test.done();
+};
