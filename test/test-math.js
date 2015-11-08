@@ -67,3 +67,8 @@ exports.test_add = function(test){
 	test.equals(math.add(9,1),10);
 	test.done();
 };
+
+exports.test_subtract = function(test){
+	test.equals(math.subtract(10,10),0);
+	test.done();
+};
