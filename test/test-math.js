@@ -85,3 +85,8 @@ exports.test_multiply2 = function(test){
 	test.equals(math.multiply2(2,5,9), false);
 	test.done();
 };
+
+exports.multiply_func = function(test){
+	test.equals(math.multiply2(2,4,8),true);
+	test.done();
+};
