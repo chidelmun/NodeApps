@@ -72,3 +72,7 @@ exports.test_subtract = function(test){
 	test.equals(math.subtract(10,10),0);
 	test.done();
 };
+exports.test_multiply = function(test){
+	test.equals(math.multiply(2,3),6);
+	test.done();
+};
