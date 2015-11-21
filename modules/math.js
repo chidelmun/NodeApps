@@ -36,3 +36,7 @@ exports.add2 = function(x,y,z){
 exports.multiply2 = function(x,y,z){
 	return (x*y == z) == true;
 }
+
+exports.isdivisible = function(x,y){
+	return (x%y == 0) == true;
+};
