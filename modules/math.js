@@ -24,3 +24,7 @@ exports.max = function(x,y){
 exports.min = function(x,y){
 	return x<y == true;
 }
+
+exports.multiply = function(x,y){
+	return x*y;
+};
