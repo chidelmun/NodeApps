@@ -90,3 +90,8 @@ exports.multiply_func = function(test){
 	test.equals(math.multiply2(2,4,8),true);
 	test.done();
 };
+
+exports.test_isdivisible = function(test){
+	test.equals(math.isdivisibleby(20,2),true);
+	test.done();
+};
