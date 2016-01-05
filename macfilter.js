@@ -2,7 +2,7 @@
 
 var os = require('os')
 var http = require('http')
-var PORT = 9000
+var PORT = 9002
 var MAC = '58:b0:35:75:0e:39'
 
 server = http.createServer()
@@ -17,6 +17,10 @@ server.addListener('connection',function(req,res){
 		console.log(MAC + "Is now connected to server.")
 	}
 });
+
+process.on('SIGINT', function(){
+	console.log("SIGINT received");
+})
 
 server.listen(PORT);
 
