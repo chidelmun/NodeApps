@@ -1,0 +1,24 @@
+{
+  "name": "nodeapps",
+  "version": "1.0.0",
+  "description": "Sample nodejs applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chidelmun/NodeApps.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "http"
+  ],
+  "author": "Delveri Munang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chidelmun/NodeApps/issues"
+  },
+  "homepage": "https://github.com/chidelmun/NodeApps#readme"
+}
