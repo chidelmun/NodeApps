@@ -5,3 +5,6 @@ function handle_GET_request(req,res){
 	console.log("GET request received")
 }
 
+function handle_POST_request(req,res){
+	console.log("POST request received")
+}
