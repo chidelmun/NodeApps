@@ -1,42 +1,54 @@
 var http = require('http')
 var PORT = 9005
 
-function handle_GET_request(res){
+function handle_GET_request(req, res){
 	console.log("GET request received")
 }
 
-function handle_POST_request(res){
+function handle_POST_request(req,res){
 	console.log("POST request received")
 }
 
-function handle_PUT_request(res){
+function handle_PUT_request(req,res){
 	console.log("PUT request received")
 }
 
-function handle_DELETE_request(res){
+function handle_DELETE_request(req,res){
 	console.log("DELETE request received")
 }
 
-function handle_BAD_request(res){
+function handle_BAD_request(req,res){
 	console.log("BAD request received")
 }
 
 function request_handler(req,res){
 	switch(req.method){
 		case 'GET':
-			handle_GET_request(res);
+			handle_GET_request(req,res);
 			break;
 
 		case 'POST':
-			handle_POST_request(res);
+			handle_POST_request(req,res);
 			break;
 
 		case 'PUT':
-			handle_PUT_request(res);
+			handle_PUT_request(req,res);
 			break;
+
 		case 'DELETE':
-			handle_DELETE_request(res);
+			handle_DELETE_request(req,res);
+			break;
+
+		default:
+			handle_BAD_request(req,res);
 			break;
 
 	}
 }
+
+var server = http.createServer(request_handler);
+
+server.listen(PORT);
+
+
+
