@@ -17,6 +17,9 @@ function handle_DELETE_request(res){
 	console.log("DELETE request received")
 }
 
+function handle_BAD_request(res){
+	console.log("BAD request received")
+}
 
 function request_handler(req,res){
 	switch(req.method){
@@ -34,6 +37,6 @@ function request_handler(req,res){
 		case 'DELETE':
 			handle_DELETE_request(res);
 			break;
-		
+
 	}
 }
