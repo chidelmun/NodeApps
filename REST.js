@@ -12,3 +12,7 @@ function handle_POST_request(req,res){
 function handle_PUT_request(req,res){
 	console.log("PUT request received")
 }
+
+function handle_DELETE_request(req,res){
+	console.log("DELETE request received")
+}
