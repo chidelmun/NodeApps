@@ -1,8 +1,11 @@
 var http = require('http')
-var PORT = 9005
+var PORT = 9006
 
 function handle_GET_request(req, res){
-	console.log("GET request received")
+	//console.log("GET request received")
+	console.log(req.url);
+	console.log({name:'Dario',height:'1,79',address:'Buea'});
+	
 }
 
 function handle_POST_request(req,res){
