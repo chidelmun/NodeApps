@@ -2,11 +2,12 @@ extends layout
 
 block content
   h1= title
+  body(bgcolor="teal")
   p Welcome to #{title}
 
   p Your macaddress is #{mac}
 
-  input 
+  input(value="#{mac}")
   br
   input
   br
