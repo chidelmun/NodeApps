@@ -1,0 +1,14 @@
+{
+  "name": "selenium-tests",
+  "version": "1.0.0",
+  "description": "Example on Using Selenium tests on Google search",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Delveri Munang",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^2.48.2"
+  }
+}
