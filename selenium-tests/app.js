@@ -6,8 +6,9 @@ var driver = new webdriver.Builder()
     .forBrowser('firefox')
     .build();
 
-driver.get('http://www.google.com/ncr');
-driver.findElement(By.name('q')).sendKeys('GSoC 2016');
-driver.findElement(By.name('btnG')).click();
-driver.wait(until.titleIs('webdriver - Google Search'), 5000);
-driver.quit();
+driver.get('http://localhost:9000');
+driver.findElement(By.name('pma_username')).sendKeys('root');
+driver.findElement(By.name('pma_password')).sendKeys('root1');
+driver.findElement(By.id('input_go')).click();
+driver.wait(until.titleIs('webdriver - Google Search'), 9000);
+// driver.quit();
