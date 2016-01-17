@@ -16,3 +16,7 @@ exports.divide = function(x,y){
 exports.modulo = function(x,y){
 	return x%y;
 };
+
+exports.max = function(x,y){
+	return x > y == true;
+};
