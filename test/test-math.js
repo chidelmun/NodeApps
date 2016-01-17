@@ -110,3 +110,8 @@ exports.test_div2 = function(test){
 	test.equals(math.divide2(4,2,2),true);
 	test.done();
 };
+
+exports.test_add3 = function(test){
+	test.equals(math.divide2(5,2,4),false);
+	test.done();
+};
