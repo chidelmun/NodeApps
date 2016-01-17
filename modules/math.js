@@ -40,3 +40,7 @@ exports.multiply2 = function(x,y,z){
 exports.isdivisible = function(x,y){
 	return (x%y == 0) == true;
 };
+
+exports.divide2 = function(x,y,z){
+	return (x/y == z) == true;
+};
