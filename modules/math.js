@@ -20,3 +20,7 @@ exports.modulo = function(x,y){
 exports.max = function(x,y){
 	return x > y == true;
 };
+
+exports.min = function(x,y){
+	return x<y == true;
+}

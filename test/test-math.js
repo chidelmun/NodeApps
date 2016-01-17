@@ -42,3 +42,13 @@ exports.test_max = function(test){
 	test.equals(math.max(5,1),true);
 	test.done();
 };
+
+exports.test_min = function(test){
+	test.equals(math.min(1,10),true);
+	test.done();
+}
+
+exports.test_min = function(test){
+	test.equals(math.min(5,1),false);
+	test.done();
+};
