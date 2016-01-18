@@ -115,3 +115,8 @@ exports.test_add3 = function(test){
 	test.equals(math.divide2(5,2,4),false);
 	test.done();
 };
+
+exports.test_add = function(test){
+	test.equals(math.add(50,50),100);
+	test.done();
+};
