@@ -5,10 +5,95 @@
 	<title>Responsive design Theme</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<style type="text/css">
+		body{
+			background-image: url('bg.jpg');
+			color: black;
+			font-size: 18px;
+			font-family: Arial, 'Lucida sans Unicode';
+			line-height: 1.5;
+			text-align: left;
+		}
 
+		a{
+			text-decoration: none;
+		}
+
+		.body{
+			margin: 0 auto;
+			width: 70%;
+			clear: both;
+		}
 	</style>
 </head>
-<body>
+<body class="body">
+<header class="mainheader">
+	<img src="image.png">
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portforlio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<!-- End Header -->
 
+<div class="maincontent">
+	<div class="content">
+		<article class="topcontent">
+			<header>
+				<h2> <a href="#"> First Post</a> </h2>
+			</header>
+			<footer>
+				<p class="postinfo"> Some Information about the Post</p>
+			</footer>
+			<content>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</content>	
+		</article>
+		
+	</div>
+</div>
+
+<!-- End Main Content -->
+
+<aside class="topsidebar">
+	<article>
+		<h2>Top Side bar</h2>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		</p>
+	</article>
+</aside>
+
+<aside class="middlesidebar">
+	<article>
+		<h2>Middle Side bar</h2>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		</p>
+	</article>
+</aside>
+
+<aside class="bottomsidebar">
+	<article>
+		<h2>Bottom Side bar</h2>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		</p>
+	</article>
+</aside>
+
+<!-- End Side bars -->
+
+<footer class="mainfooter">
+	<p> Copyright &copy <a href="#"> Delveri Munang </a> </p>	
+</footer>
 </body>
 </html>
