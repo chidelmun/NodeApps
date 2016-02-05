@@ -17,12 +17,134 @@
 		a{
 			text-decoration: none;
 		}
+		a:link, a:visited{
+
+		}
+
+		a:hover, a:active{
+
+		}
 
 		.body{
 			margin: 0 auto;
 			width: 70%;
 			clear: both;
 		}
+
+		.mainheader img{
+			width: 20%;
+			height: auto;
+			margin: 2% 0;
+		}
+		.mainheader nav{
+			background-color: #666;
+			height: 40px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+		.mainheader nav ul{
+			list-style: none;
+			margin: 0 auto;
+		}
+
+		.mainheader nav ul li{
+			float: left;
+			display: inline;
+		}
+
+		.mainheader nav a:link, .mainheader nav a:visited{
+			color: #FFF;
+			display: inline-block;
+			padding: 10px 25px;
+			height: 20px;
+		}
+
+		.mainheader nav a:hover, .mainheader nav a:active,
+		.mainheader nav .active a:link, .mainheader nav .active a:visited{
+			background-color: #CF5C3F; 
+			text-shadow: none;
+		}
+
+		.mainheader nav ul li a{
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+
+		.maincontent{
+			line-height: 25px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+		.content{
+			width: 70%;
+			float: left;
+		}
+		.topcontent{
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			overflow: hidden;
+			padding: 3% 5%; 
+			margin-top: 2%;
+		}
+		.bottomcontent{
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			overflow: hidden;
+			padding: 3% 5%;
+			margin-top: 2%; 
+		}
+
+		.topsidebar{
+			margin-top: 2%;
+			width: 21%;
+			float: left;
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			margin-left: 3%;
+			padding: 2% 3%;
+			margin-bottom: 2%;
+		}
+
+		.middlesidebar{
+			width: 21%;
+			float: left;
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			margin-left: 3%;
+			padding: 2% 3%;
+			margin-bottom: 2%;
+		}
+
+		.bottomsidebar{
+			width: 21%;
+			float: left;
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			margin-left: 3%;
+			padding: 2% 3%;
+			margin-bottom: 2%;
+		}
+
+		.mainfooter{
+
+		}
+		.mainfooter p{
+			
+		}
+
 	</style>
 </head>
 <body class="body">
@@ -30,7 +152,7 @@
 	<img src="image.png">
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li class="active"><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Portforlio</a></li>
 			<li><a href="#">Contact</a></li>
@@ -57,6 +179,24 @@
 				</p>
 			</content>	
 		</article>
+
+		<article class="bottomcontent">
+			<header>
+				<h2> <a href="#"> Second Post</a> </h2>
+			</header>
+			<footer>
+				<p class="postinfo"> Some Information about the Post</p>
+			</footer>
+			<content>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				<p>
+					 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</content>	
+		</article>
+
 		
 	</div>
 </div>
