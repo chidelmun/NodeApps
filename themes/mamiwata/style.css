@@ -1,0 +1,101 @@
+
+body{
+	width: 95%;
+	margin-top: -5px;
+	margin-left: 2%;
+}
+a{
+	text-decoration: none; 
+	color: white;
+}
+.mainheader{
+}
+.mainheader .primarynav{
+	background-image: url('bg.jpg');
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 90px;
+
+}
+.mainheader ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li{
+
+	display: inline;
+}
+
+.mainheader nav ul li{
+	padding: 50px 20px;
+	float: right;
+}
+
+.maincontent{
+	width: 95%;
+	
+}
+.leftcontent{
+	height: 33%;
+	width: 15%;
+	background-color: teal;
+	float: left;
+	margin-top: 2%;
+}
+.middlecontent{
+	height: 33%;
+	width: 65%;
+	background-color: orange;
+	float: left;
+	
+	margin: 2% 2px 0 2px;
+}
+.rightcontent{
+	height: 33%;
+	width: 15%;
+	background-color: teal;
+	float: left;
+	margin-top: 2px;
+	
+}
+.mainfooter{
+	float: left;
+}
+@media only screen and (min-width: 150px) and (max-width: 600px){
+			.leftcontent{
+				width: 100%;
+				margin-left: 2%;
+			}
+			.middlecontent{
+				width: 100%;
+				margin-left: 2%;
+			}
+			.rightcontent{
+				width: 100%;
+				margin-top: 2%;
+				margin-left: 2%;
+			}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 750px){
+	.leftcontent{
+				width: 100%;
+				margin-left: 2%;
+				height: 33%;
+			}
+			.middlecontent{
+				width: 100%;
+				margin-left: 2%;
+				background-image: url('image.png');
+				height: 33%;
+			}
+			.rightcontent{
+				width: 100%;
+				margin-top: 2%;
+				margin-left: 2%;
+				height: 33%;
+			}
+}
+
