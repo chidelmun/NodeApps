@@ -8,7 +8,7 @@
 	.mainheader{
 		width: 100%;
 		height: 400px;
-		background-color: teal;
+		background: linear-gradient(to bottom,teal,aqua,teal); 
 		margin-top: -2%;
 		position: fixed;
 		margin-left: -8px;
@@ -18,10 +18,26 @@
 		margin : 2% auto;
 		background-image: url('bg.jpg');
 		height: 200px;
-		border: 1px solid black;
+		border: 0px solid black;
 		border-radius: 800px;
-		margin-top: -8%;
+		margin-top: -6%;
 		position: fixed;
+	}
+	nav{
+		margin-top: 8%;
+		margin-right: 4%;
+
+	}
+	li{
+		list-style: none;
+		display: inline;
+		float: right;
+		padding: 15px 12px;
+	}
+	a{
+		font-size: 19px;
+		text-decoration: none;
+		color: white;
 	}
 
 
@@ -32,6 +48,14 @@
 <body>
 	<header class="mainheader">
 	<div class="round">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Members</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
 	
 	</div>
 		

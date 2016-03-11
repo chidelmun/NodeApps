@@ -125,3 +125,14 @@ exports.test_subtract = function(test){
 	test.equals(math.subtract(50,100),-50);
 	test.done();
 };
+
+// To be implemented.
+exports.test_connect = function(){
+	test.equals(context.connect(), true);
+	test.done();
+}
+
+exports.test_reconnect = function(){
+	test.equals(context.reconnect(), true);
+	test.done();
+}

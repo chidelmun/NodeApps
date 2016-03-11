@@ -1,5 +1,5 @@
 {
-  "name": "nodeapps",
+  "name": "ircapp",
   "version": "1.0.0",
   "description": "Sample nodejs applications",
   "main": "index.js",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/chidelmun/NodeApps/issues"
   },
-  "homepage": "https://github.com/chidelmun/NodeApps#readme"
+  "homepage": "https://github.com/chidelmun/NodeApps#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  },
+  "devDependencies": {}
 }

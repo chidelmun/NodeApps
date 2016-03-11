@@ -1,4 +1,4 @@
 function test(){
-	this.ad
+	this.add();
 
 }

@@ -1,9 +1,5 @@
-var http = require('http')
-var PORT = 9000
-server = http.createServer()
+var http = require('irc')
 
-server.on('connection',function(req,res){
-	console.log("Server Running on port " + PORT);
+var client = new irc.Client('irc.freenode.net', 'kankaka', {
+    channels: ['#ublab'],
 });
-server.listen(PORT);
-
