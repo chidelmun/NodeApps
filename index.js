@@ -1,12 +1,13 @@
 var irc = require('irc')
 
-var client = new irc.Client('irc.freenode.net', 'kankaka', {
+var client = new irc.Client('irc.freenode.net', 'CHICK_BOT', {
     channels: ['#ublab'],
 });
 
 client.addListener('message', function (from, to, message) {
     console.log(from + ' => ' + to + ': ' + message);
-    client.say('#ublab', "Hello Everyone");
+    // client.say('#ublab', "I am fine thanks.");
+     client.say('#ublab', "Bye " + from);
 	
 });
 
