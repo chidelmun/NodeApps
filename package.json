@@ -25,7 +25,9 @@
     "test": "test"
   },
   "dependencies": {
-    "nodeunit": "^0.9.1"
+    "express": "^4.13.4",
+    "nodeunit": "^0.9.1",
+    "socket.io": "^1.4.5"
   },
   "devDependencies": {}
 }

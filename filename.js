@@ -1,17 +1,13 @@
-var http = require('http');
-PORT = 8888;
-
-app = http.createServer((req,res)=>{
-	res.writeHead(200,{"content-Type":"text/html",
-						'content-length':'123',
-						'connection':'keep-alive'});
-	res.write("Hello World \n");
-	if(res.statusCode != 200){
-		console.log("Bad Response");
-	}else
-	console.log("Valid request");
-
-}).listen(PORT);
-
-console.log(__filename);
-console.log("Server running on port " + PORT);
+var server = require('net').createServer(function(socket) {
+console.log('new connection');
+socket.setEncoding('utf8');
+socket.write("Hello! You can start typing. Type 'quit' to exit.\n");
+socket.on('data', function(data) { 
+	console.log('got:', data.toString())
+if (data.trim().toLowerCase() === 'quit') {
+socket.write('Bye bye!');
+return socket.end(); }
+socket.write(data); });
+socket.on('end', function() {
+ console.log('Client connection ended');
+}); }).listen(4001);
