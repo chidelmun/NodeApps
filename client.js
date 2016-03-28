@@ -1,7 +1,9 @@
 var net = require('net');
+var os = require('os')
 PORT = 9999;
-conn = net.createConnection(PORT, ()=>{
-	console.log("Connected\n");
+conn = net.createConnection(PORT);
+conn.on('connect', ()=>{
+	console.log("Connected to Server\n");
 });
 
-conn.write('Here is data sent from client');
+process.stdin.pipe(conn)
