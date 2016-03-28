@@ -1,12 +1,16 @@
-var net = require('net');
+var dgram = require('dgram');
+var server = dgram.createSocket('udp4');
 
-serv = net.createServer();
-serv.on('connection', (socket)=>{
-	console.log("A client connected\n");
-	socket.on('data', (data)=>{
-		console.log(data.toString());
-		socket.write(data.toString());
-	});
+server.on('message', (message)=> { 
+	console.log('server got message: ' + message);
 });
 
-serv.listen(9999);
+var port = 4000;
+
+server.on('listening', ()=> {
+	var address = server.address();
+	console.log('server listening on ' + address.address + ':' + address.port);
+	
+}); 
+
+server.bind(port);

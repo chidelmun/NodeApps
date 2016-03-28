@@ -1,9 +1,10 @@
-var net = require('net');
-var os = require('os')
-PORT = 9999;
-conn = net.createConnection(PORT);
-conn.on('connect', ()=>{
-	console.log("Connected to Server\n");
+var dgram = require('dgram');
+var client = dgram.createSocket('udp4');
+
+process.stdin.on('data', (data)=> { 
+	client.send(data, 0, data.length, 4000, 'localhost');
 });
 
-process.stdin.pipe(conn)
+client.on('message', (message)=> {
+	 console.log('Got message back:', message.toString());
+});
