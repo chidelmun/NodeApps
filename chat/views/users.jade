@@ -7,6 +7,26 @@ block content
   h1 Welcome to user listing page.
 
   h1 New User
-   
+  
   input(type="text", placeholder="your name")
+  br
+  a(href="/") back
+  - var name = "Delveri";
+  br
+  h1 #{name}
+  button(class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent") Click Me
+
+  div(class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer")
+         div(class="mdl-layout__drawer")
+            span(class="mdl-layout-title") Material Design
+            nav(class="mdl-navigation")
+               a(class="mdl-navigation__link" href="") Home
+               a(class="mdl-navigation__link" href="") Features
+               a(class="mdl-navigation__link" href="") About Us
+               a(class="mdl-navigation__link" href="") Log Out
+         main(class="mdl-layout__content")
+            div(class="page-content" style="padding-left:100px;") Hello World!
+
+
+
 
