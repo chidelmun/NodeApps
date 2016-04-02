@@ -1,19 +1,25 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: teal;
-  margin :5%;
+  /*background-color: teal;*/
+  background-image: url("http://desktopbackgrounds4u.com/wp-content/gallery/beautiful-beach-wallpapers/beautiful-beach-wallpaper.jpg");
+  margin :1%;
   color : #013452;
 }
 
-a {
-  color: #00B7FF;
+#middle{
+  background-color: teal;
 }
 
-input{
-	width :30%;
-	height : 25px;
-	border-radius: 10px;
-	border :1px solid navy;
-	font-size: 15px;
+nav, a{
+  padding :25px;
+  float:right;
+
 }
+
+#home_id {
+  color: white;
+}
+
+
+

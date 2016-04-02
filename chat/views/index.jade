@@ -1,6 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  a(href="users") Users
-  p Welcome to #{title} by #{name}
+	div(class="mdl-grid")
+		div(class="mdl-cell mdl-cell--2-col" id="left")
+			h1 Ecpress
+		div(class="mdl-cell mdl-cell--8-col" id="middle")
+			nav(class="mdl-navigation")
+				a(class="mdl-navigation__link" href="" id="home_id") Home
+				a(class="mdl-navigation__link" href="" id="home_id") About
+				a(class="mdl-navigation__link" href="" id="home_id") Projects
+				a(class="mdl-navigation__link" href="" id="home_id") Register 
+				a(class="mdl-navigation__link" href="" id="home_id") Live
+		div(class="mdl-cell mdl-cell--2-col" id="right")
+			h1 Side
