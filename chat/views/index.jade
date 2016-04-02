@@ -2,14 +2,28 @@ extends layout
 
 block content
 	div(class="mdl-grid")
-		div(class="mdl-cell mdl-cell--2-col" id="left")
-			h1 Ecpress
-		div(class="mdl-cell mdl-cell--8-col" id="middle")
+		div(class="mdl-cell mdl-cell--1-col" id="left")
+			
+		div(class="mdl-cell mdl-cell--10-col" id="middle")
 			nav(class="mdl-navigation")
 				a(class="mdl-navigation__link" href="" id="home_id") Home
-				a(class="mdl-navigation__link" href="" id="home_id") About
+				a(class="mdl-navigation__link" href="" id="home_id") Videos
 				a(class="mdl-navigation__link" href="" id="home_id") Projects
 				a(class="mdl-navigation__link" href="" id="home_id") Register 
 				a(class="mdl-navigation__link" href="" id="home_id") Live
-		div(class="mdl-cell mdl-cell--2-col" id="right")
-			h1 Side
+		div(class="mdl-cell mdl-cell--1-col" id="right")
+			
+
+	div(class="mdl-grid")
+		div(class="mdl-cell mdl-cell--3-col" id="left")
+			object(width="400" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+			br
+			object(width="400" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+			br
+			object(width="400" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+		div(class="mdl-cell mdl-cell--6-col" id="middle")
+			h1 Live Content
+			br
+			object(width="90%" height="500" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1")
+		div(class="mdl-cell mdl-cell--3-col" id="right")
+			h1 Ads

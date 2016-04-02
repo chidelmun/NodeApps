@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*background-color: teal;*/
-  background-image: url("http://desktopbackgrounds4u.com/wp-content/gallery/beautiful-beach-wallpapers/beautiful-beach-wallpaper.jpg");
+  background-image: url("../images/bg.jpg");
   margin :1%;
   color : #013452;
 }
@@ -20,6 +20,13 @@ nav, a{
 #home_id {
   color: white;
 }
+iframe{
+  border: 4px solid teal;
+}
+object{
+  border: 4px solid teal;
+}
+
 
 
 
