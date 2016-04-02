@@ -1,6 +1,9 @@
 extends layout
 
 block content
+	script(type="text/javascript")
+		console.log("Hello")
+		alert("Dario")
 	div(class="mdl-grid")
 		div(class="mdl-cell mdl-cell--1-col" id="left")
 			
@@ -23,13 +26,14 @@ block content
 			object(width="400" height="250" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
 		div(class="mdl-cell mdl-cell--6-col" id="middle")
 			br
-			object(width="90%" height="500" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+			div()
+				video( autoplay="true" id="videoElement")
 			div(class="mdl-grid" id="suggest")
 				div(class="mdl-cell mdl-cell--4-col")
-					object(width="228" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+					object(width="238" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
 				div(class="mdl-cell mdl-cell--4-col")
-					object(width="228" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+					object(width="238" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
 				div(class="mdl-cell mdl-cell--4-col")
-					object(width="228" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
+					object(width="238" height="240" data="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=0")
 		div(class="mdl-cell mdl-cell--2-col" id="right")
-			h3 Ads
+			h2 Ads
