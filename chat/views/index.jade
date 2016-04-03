@@ -11,7 +11,7 @@ block content
 			nav(class="mdl-navigation")
 				a(class="mdl-navigation__link" href="" id="home_id") Home
 				a(class="mdl-navigation__link" href="" id="home_id") Videos
-				a(class="mdl-navigation__link" href="" id="home_id") Projects
+				a(class="mdl-navigation__link" href="" id="home_id") Subscriptions
 				a(class="mdl-navigation__link" href="" id="home_id") Register 
 				a(class="mdl-navigation__link" href="" id="home_id") Live
 		div(class="mdl-cell mdl-cell--1-col" id="right")
@@ -21,13 +21,18 @@ block content
 		div(class="mdl-cell mdl-cell--3-col" id="left")
 			object(width="400" height="250" data="https://www.youtube.com/embed/lN2ozTZNJC0?autoplay=0")
 			br
+			br
 			object(width="400" height="250" data="https://www.youtube.com/embed/tWUobruxGH4?autoplay=0")
+			br
 			br
 			object(width="400" height="250" data="https://www.youtube.com/embed/f02MfCTWIow?autoplay=0")
 		div(class="mdl-cell mdl-cell--6-col" id="middle")
 			br
+			br
 			div()
 				video( autoplay="true" id="videoElement")
+			br
+			button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="btn()" id="btn-share") Share
 			div(class="mdl-grid" id="suggest")
 				div(class="mdl-cell mdl-cell--4-col")
 					object(width="238" height="240" data="https://www.youtube.com/embed/rD3IiCK1IvI?autoplay=0")

@@ -50,7 +50,11 @@ div#middle, object{
     height: 500px;
 }
 #btn-blue{
-  margin-left: 55px;
+  margin-left: 85px;
+}
+
+#btn-share{
+    margin-left: 40%;
 }
 
 
