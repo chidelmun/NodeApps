@@ -15,3 +15,13 @@ window.onload = function(){
 	    // do something
 	}
 }
+
+function btn(){
+	if (document.getElementById("btn-blue").innerHTML == "Play") {
+		document.getElementById("btn-blue").innerHTML = "Pause";
+		alert("Sorry!! Can't perform Action");
+	}else{
+		document.getElementById("btn-blue").innerHTML = "Play";
+		alert("Sorry!! Can't perform Action");
+	}
+}
