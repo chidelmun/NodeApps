@@ -1,3 +1,42 @@
 extends layout
 
-	h2 Login Page
+block content
+	div(class="mdl-grid")
+		div(class="mdl-cell mdl-cell--1-col" id="left")
+			
+		div(class="mdl-cell mdl-cell--10-col" id="middle")
+			nav(class="mdl-navigation")
+				a(class="mdl-navigation__link" href="/" id="home_id") Home
+				a(class="mdl-navigation__link" href="" id="home_id") Videos
+				a(class="mdl-navigation__link" href="" id="home_id") Subscriptions
+				a(class="mdl-navigation__link" href="/login" id="home_id") Register 
+				a(class="mdl-navigation__link" href="" id="home_id") Live
+		div(class="mdl-cell mdl-cell--1-col" id="right")
+			
+
+	div(class="mdl-grid" id="content")
+		div(class="mdl-cell mdl-cell--2-col" id="left")
+			
+		div(class="mdl-cell mdl-cell--7-col" id="middle")
+			br
+			br
+			form(action="/")
+				div(class="mdl-textfield mdl-js-textfield" id="username")
+					input(class="mdl-textfield__input" type="text" id="sample1")
+					label(class="mdl-textfield__label" for="sample1") Username
+				br
+				br
+				div(class="mdl-textfield mdl-js-textfield" id="username")
+					input(class="mdl-textfield__input" type="text" id="sample1")
+					label(class="mdl-textfield__label" for="sample1") Password
+				br
+				br
+				h3(id="or") Or
+				br
+				br
+				button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="login") Facebook
+				button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="login") Twitter
+				button(class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"  id="login") Google
+			
+		div(class="mdl-cell mdl-cell--2-col" id="right")
+			h2 Ads
