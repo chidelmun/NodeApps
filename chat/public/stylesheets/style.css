@@ -59,6 +59,7 @@ div#middle, object{
 #username{
   margin-left: 20%;
   color: white;
+  font-size: 20px;
 }
 #or{
   margin-left: 40%;
@@ -67,6 +68,7 @@ div#middle, object{
   margin: 25px;
   margin-left: 15%;
   margin-bottom: 5%;
+  position: relative;
 }
 
 
