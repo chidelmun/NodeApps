@@ -1,5 +1,5 @@
 var irc = require('irc');
-var bot = new irc.Client('chat.freenode.net', process.env.OPENSHIFT_APP_NAME || 'CHICK_BOT', {
+var bot = new irc.Client('chat.freenode.net', process.env.OPENSHIFT_APP_NAME || 'gdgbueabot', {
     channels: ['#ublab', '#chickserver'],
     port: 8001,
     debug: true
@@ -7,7 +7,7 @@ var bot = new irc.Client('chat.freenode.net', process.env.OPENSHIFT_APP_NAME || 
 
 bot.addListener("join", function(channel, who) {
 	// Welcome them in!
-	bot.say(channel, who + "...dude...welcome back!");
+	bot.say(channel, "Welcome " + who + " Please fill the form at http://goo.gl/forms/WIPyrU7uXW" );
 });
 
 bot.addListener('message', function(from, to, message) {
