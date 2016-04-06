@@ -16,5 +16,8 @@
     "irc"
   ],
   "author": "Delveri Munang",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "4.1.1"
+  }
 }
