@@ -1,0 +1,20 @@
+{
+  "name": "irc",
+  "version": "1.0.0",
+  "description": "A sample Nodejs Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "node",
+    "bot",
+    "irc"
+  ],
+  "author": "Delveri Munang",
+  "license": "MIT"
+}
