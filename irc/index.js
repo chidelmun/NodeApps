@@ -8,6 +8,7 @@ var bot = new irc.Client('chat.freenode.net', process.env.OPENSHIFT_APP_NAME || 
 bot.addListener("join", function(channel, who) {
 	// Welcome them in!
 	bot.say(channel, "Welcome " + who + " Please fill the form at http://goo.gl/forms/WIPyrU7uXW" );
+	bot.say(channel, "Do you know @smcon is coming up soon? Follow us on Twitter at @smcon2016");
 });
 
 bot.addListener('message', function(from, to, message) {
