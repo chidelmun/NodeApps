@@ -29,11 +29,12 @@
       }
       #messages { 
         list-style-type: none; 
-        margin: 0; padding: 0;
+        margin: 5px; 
+        padding: 0;
          }
       #messages li {
        padding: 5px 50px;
-       font-size: 35px; 
+       font-size: 25px; 
      }
       #messages li:nth-child(odd) { 
         background: teal; 
@@ -41,7 +42,7 @@
 
 
       #userlist{
-        
+
       }
 
     </style>
@@ -90,7 +91,10 @@
   <div id="userlist" class="mdl-layout__drawer">
     <span class="mdl-layout-title">User List</span>
     <nav class="mdl-navigation">
+      <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">person </i>
       <a class="mdl-navigation__link" href="">Me</a>
+    </span>
       <a class="mdl-navigation__link" href="">Atangana</a>
       <a class="mdl-navigation__link" href="">Nyah</a>
       <a class="mdl-navigation__link" href="">Paul</a>
@@ -116,6 +120,7 @@
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
+      var  nick = prompt("Enter your Nick to join chat");
       var socket = io();
       $('form').submit(function(){
         socket.emit('chat message', $('#m').val());
@@ -123,7 +128,7 @@
         return false;
       });
       socket.on('chat message', function(msg){
-        $('#messages').append($('<li>').text(msg));
+        $('#messages').append($('<li>').text( nick + " : " + msg));
       });
     </script>
   </body>
