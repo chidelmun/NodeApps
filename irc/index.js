@@ -15,7 +15,7 @@ bot.addListener('message', function(from, to, message) {
     if(  message.indexOf('Know any good jokes?') > -1
       || message.indexOf('good joke') > -1
     ) {
-        bot.say(to, 'Knock knock!');
+        bot.say(to, 'Google them or would you want tme to perform a websearch for you?');
     }
 });
 
@@ -26,7 +26,7 @@ bot.addListener('message', function(from, to, message) {
       || message.indexOf("Who is there?") > -1
       )
     {
-        bot.say(to, 'CHICK_BOT');
+        bot.say(to, 'Hello, I am here to help you.');
     }
 });
 bot.addListener('message', function(from, to, message) {
