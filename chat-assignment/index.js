@@ -4,6 +4,8 @@ var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
+  console.log("A client connected");
+  
 });
 
 io.on('connection', function(socket){

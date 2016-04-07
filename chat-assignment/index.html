@@ -39,6 +39,11 @@
         background: teal; 
       }
 
+
+      #userlist{
+        
+      }
+
     </style>
     <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <script src="/node_modules/material-design-lite/material.min.js"></script>
@@ -48,11 +53,66 @@
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   </head>
   <body>
+    <!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+</style>
+
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">User List</span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+      </nav>
+    </div>
+  </header>
+  <div id="userlist" class="mdl-layout__drawer">
+    <span class="mdl-layout-title">User List</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Me</a>
+      <a class="mdl-navigation__link" href="">Atangana</a>
+      <a class="mdl-navigation__link" href="">Nyah</a>
+      <a class="mdl-navigation__link" href="">Paul</a>
+      <a class="mdl-navigation__link" href="">Jesla</a>
+      <a class="mdl-navigation__link" href="">Acho</a>
+      <a class="mdl-navigation__link" href="">Nyobe</a>
+      <a class="mdl-navigation__link" href="">Sandy</a>
+      <a class="mdl-navigation__link" href="">Daisy</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
 
     <ul id="messages" ></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
+
+    </div>
+  </main>
+</div>
+
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
