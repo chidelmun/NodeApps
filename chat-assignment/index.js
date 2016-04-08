@@ -1,5 +1,5 @@
 var app = require('express')();
-var http = require('http').Server(app);
+var http = require('http').Server(app);		// Pass express app to http server
 var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
