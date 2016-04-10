@@ -10,12 +10,12 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
-    io.emit('chat message', "  " + msg);
+    io.emit('chat message', username + " : " + msg);
   });
 
   socket.on('join', function(nick) { 
   	console.log(nick + " has Joinned chat!");
-  	var username = nick;
+  	username = nick;
   	io.set('user', nick, function(err) {
 	if (err) { 
 		throw err;
