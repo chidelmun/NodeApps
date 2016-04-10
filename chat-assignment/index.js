@@ -13,15 +13,16 @@ io.on('connection', function(socket){
     io.emit('chat message', "  " + msg);
   });
 
-  socket.on('login', function(username) { 
-  	io.set('username', username, function(err) {
-	if(err) { 
+  socket.on('join', function(nick) { 
+  	console.log(nick + " has Joinned chat!");
+  	var username = nick;
+  	io.set('user', nick, function(err) {
+	if (err) { 
 		throw err;
 	 }
-	console.log("Logged in");
-    });
-  });
- io.emit('login');
+ });
+});
+
 });
 
 http.listen(3000, function(){
